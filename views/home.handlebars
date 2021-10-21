@@ -1,0 +1,11 @@
+<h1>Usuários: </h1>
+
+{{#each users}}
+
+    <h1>Nome: {{dataValues.nome}}</h1>
+    <h2>CPF: {{dataValues.cpf}}</h2>
+    <h3>Idade: {{dataValues.idade}}</h3>
+    <h4>E-mail: {{dataValues.email}}</h4>
+    <a href="/deletar/{{dataValues.id}}"><button>Deletar</button></a>
+    <hr>
+{{/each}}
